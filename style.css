@@ -1,0 +1,214 @@
+.head{
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    opacity: 0.9;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+.menu{
+    width:1150px ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logoContainer{
+    width:3%;
+}
+.logo{
+    width: 100%;
+}
+
+.topMenu{
+    text-decoration:none;
+    color: inherit;
+    margin-right: 25px;
+    font-size: 18px;
+    
+}
+.topMenu:hover{
+    padding-bottom: 3px;
+    border-bottom:3px solid blue;
+}
+.topMenuLogo{
+    width: 45px;
+    height: 45px;
+    display: none;
+}
+
+.mainContainer{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.container{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.left{
+    display: inline-block;
+    width: 50%;
+}
+.header{
+    margin: 13px 0px;
+    border: 20%;
+    font-size: 60px;
+    color: #B93DE0;
+    
+}
+.message{
+    display: inline-block;
+    margin: 13px 0px;
+    font-size: 18px;
+}
+.leftMenu{
+    margin: 10px 0px;
+}
+.input{
+    border: none;
+    background-color: #F5F5F5;
+    display: block;
+    margin: 5px 0px;
+    border-radius: 7px;
+    outline-style: hidden;
+    outline-color:blue;
+    height: 22px;
+    width: 200px;
+}
+.loginBottom{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 2px 18px ;
+    height: 38px;
+   
+    font-size: 14px;
+    margin-right: 15px;
+}
+.appstoreIage{
+    width: 120px;
+    height: 40px;
+}
+.microsoftImage{
+    height: 40px;
+    margin-top: 30px;
+}
+.innerleft{
+    width: 80%;
+}
+.right{
+    display: flex;
+    width: 50%;
+    align-items: end;
+   
+}
+.familychat{
+    display: inline-block;
+    width: 55%;
+    
+}
+.messengerchat{
+    display: inline-block;
+   width: 45%;
+}
+.bottom{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 13.5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bottomLeft{
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+}
+.bottomMessage1{
+    font-weight:900;
+}
+
+.bottomRight{
+    width: 51%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.bottomMenu{
+    color: inherit;
+    text-decoration: none;
+    width: 18%;
+}
+/* overlay menu က ဒီမှာ*/
+@media(max-width:767px){
+    .mainContainer{
+        margin: 0 auto;
+    }
+    .topMenuContainer{
+        display: none;
+    }
+    .topMenuLogo{
+        display: block;
+    }
+    .left {
+        width: 100%;
+    
+    }
+    .innerleft{
+        margin:0 auto;
+    }
+    .right{
+        width: 100%;
+    }
+    .bottom{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .bottomLeft{
+        width: 100%;
+        text-align: center;
+    }
+    .bottomRight{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .overlayTopMenu{
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 1;
+
+
+    }
+    .left{
+        position: absolute;
+    }
+}
+@media(max-width:360px){
+    .logoContainer{
+        width: 8%;
+        
+    }
+    .innerleft{
+        width: 90%;
+    }
+    .bottom{
+        margin: 40px 15px;
+    }
+    .bottomRight{
+        margin-top: 20px;
+    }
+
+}
