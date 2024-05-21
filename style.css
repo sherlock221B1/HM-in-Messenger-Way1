@@ -55,6 +55,10 @@
 .rotateLeft{
     transform: rotate(-45deg) translate(10.75px,-10.75px);
 }
+
+.overlayTopMenuContainer{
+    display: none;
+}
 .mainContainer{
     max-width: 1150px;
     margin: 0 auto;
