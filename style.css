@@ -168,6 +168,9 @@
 }
 /* overlay menu က ဒီမှာ*/
 @media(max-width:767px){
+    .hideContainer{
+        display: none;
+    }
     .mainContainer{
         margin: 0 auto;
     }

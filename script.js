@@ -9,14 +9,14 @@ const overlayTopMenuContainerTag = document.querySelector(".overlayTopMenuContai
 let overlayMenuOpen = false;
 topMenuLogoContainerTag.addEventListener("click", ()=>{
     if(overlayMenuOpen === true){
-        containerTag.style.display = "flex";
+        containerTag.classList.remove("hideContainer");
         overlayTopMenuContainerTag.classList.remove("overlayTopMenuContainerShower");
         line2Tag.classList.remove("hideTheDiv");
         line1Tag.classList.remove("rotateRight");
         line3Tag.classList.remove("rotateLeft");
         overlayMenuOpen = false;
     }else{
-        containerTag.style.display = "none";
+        containerTag.classList.add("hideContainer");
         overlayTopMenuContainerTag.classList.add("overlayTopMenuContainerShower");
         line2Tag.classList.add("hideTheDiv");
         line1Tag.classList.add("rotateRight");
